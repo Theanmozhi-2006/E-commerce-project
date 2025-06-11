@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{% static 'images/banner/b1.png'%}" class="d-block w-100" style="height: 500px;" alt="banner">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/b2.png'%}" class="d-block w-100" style="height: 500px;" alt="banner">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/b3.png'%}" class="d-block w-100" style="height: 500px;" alt="banner">
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'images/banner/b4.png'%}" class="d-block w-100" style="height: 500px;" alt="banner">
+            </div>
+        </div>
+    </div>
+{% endblock banner_slider %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About us</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center">At JK Cafe, we believe that every cup of coffee tells a story, and every meal is an experience waiting to be savored. Nestled in the heart of Chennai, our cafe is more than just a place to grab a bite—it's a sanctuary where flavors meet comfort, and friends become family.
+        Our menu is a curated blend of global inspirations and local favorites, crafted with the finest ingredients to ensure every visit is memorable. Whether you're here to enjoy a quiet moment with a book, catch up with friends, or celebrate life's little victories, JK Cafe offers a warm ambiance and a welcoming smile.
+        Join us in creating memories, one sip and bite at a time.</p>   
+    </div>
+    <br><br>
+    <h2 class="text-center">Mission</h2>
+    <br>
+    <div class="row-container">
+        <p class="fs-4 text-center">At JK Cafe, our mission is simple yet profound: to provide a haven where quality food, exceptional coffee, and heartfelt hospitality converge. We are committed to:
+        Serving Excellence: Offering a diverse menu that caters to every palate, ensuring each dish is prepared with passion and precision.
+        Building Community: Creating a space where connections are made, ideas are shared, and every guest feels like part of the JK family.
+        Sustainability at Heart: Embracing eco-friendly practices in our operations, from sourcing ingredients responsibly to minimizing waste, all while maintaining the highest standards of quality.</p>
+    </div>
+
+</div>
+<br><br>
+{% endblock main-content %}
